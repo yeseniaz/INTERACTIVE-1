@@ -73,6 +73,25 @@ width: 100px;
 width: 100px;
 }
 
+.blink_me {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.blink_you {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 </style>
 
 
@@ -105,7 +124,10 @@ And predictability means control.</div>
 
 <body>
 <div class="overlay">
+
+<div class="blink_me">
 <h1>
+
   YOU ARE BEING WATCHED.
   YOU ARE BEING WATCHED.
   YOU ARE BEING WATCHED.
@@ -122,6 +144,7 @@ And predictability means control.</div>
 
   <img id="eyes6" src="eyes6.png" alt="eyes">
  </h1>
+ </div>
 </div>
 </div>
 
