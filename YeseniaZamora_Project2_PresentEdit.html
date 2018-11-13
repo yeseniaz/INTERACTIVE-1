@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta name="author" content="Interactive 1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+
+<style>
+
+body {
+	background: linear-gradient(red, yellow);
+}
+
+
+div.container {
+	margin: 0;
+	padding: 0;
+	font-family: tahoma, sans-serif;
+	box-sizing: border-box;
+}
+
+
+h2 {
+	text-align: left;
+	font-size: 50px;
+	color: lightpink;
+	padding-left: 40px;
+}
+
+.bodytext {
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	font-weight: bold;
+}
+
+div.bot {
+	width: 730px;
+	height: 380px;
+	background-image: url("file:///Users/yeseniazamora/Documents/INTERACTIVE%201/chat/bot.jpg");
+	background-color: black;
+	background-position: center;
+}
+
+div.twitter {
+	width: 534px;
+	height: 200px;
+	border-color: black;
+	background-image: url("file:///Users/yeseniazamora/Documents/INTERACTIVE%201/chat/twitter.jpg");
+	background-color: black;
+
+}
+
+div.insta {
+	width: 400px;
+	height: 415px;
+	border-color: black;
+	background-image: url("file:///Users/yeseniazamora/Documents/INTERACTIVE%201/chat/insta.jpg");
+}
+div.service {
+	width: 400px;
+	height: 530px;
+	background-image: url("file:///Users/yeseniazamora/Documents/INTERACTIVE%201/chat/service.jpg");
+	background-color: black;
+	background-position: center;
+}
+
+div.snapchat {
+	width: 200px;
+	height: 350px;
+	margin-top: 30px;
+	background-image: url("file:///Users/yeseniazamora/Documents/INTERACTIVE%201/chat/snapchat.jpg");
+	background-size: 100%;
+}
+
+div.encrypted {
+	width: 200px;
+	height: 200px;
+	margin-top: 30px;
+	background-image: url("file:///Users/yeseniazamora/Documents/INTERACTIVE%201/chat/encrypted.jpg");
+	background-size: 100%;
+}
+
+div.fb {
+	width: 500px;
+	height: 100px;
+	margin-top: 30px;
+	background-image: url("file:///Users/yeseniazamora/Documents/INTERACTIVE%201/chat/fb.jpg");
+	background-size: 100%;
+}
+
+div.dumbbot {
+	width: 600px;
+	height: 690px;
+	background-image: url("file:///Users/yeseniazamora/Documents/INTERACTIVE%201/chat/dumbbot.jpg");
+	background-size: 100%;
+	background-position: center;
+
+
+}
+
+.collapsible {
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+	height: 1000px
+  border: none;
+  text-align: center;
+	font-style: oblique;
+	font-weight: bold;
+  outline: none;
+  font-size: 50px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: yellow;
+
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: center;
+    width: 33.33%;
+		flex: 33%
+    padding: 400px;
+    height: 1000px;
+		
+
+}
+
+
+.row:after {
+    content: "";
+    display: auto;
+    clear: both;
+}
+
+
+
+</style>
+
+<body>
+	<div class="container">
+
+		<br>
+		<h2>Present</h2>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+<button class="collapsible">SOCIAL MEDIA</button>
+<div class="content">
+  <p>
+
+		<div class="row">
+		  <div class="column" style="background-color:yellow;">
+		    <div class="fb"></div>
+		  </div>
+
+		  <div class="column" style="background-color:yellow;">
+
+		    <div class="insta"></div>
+		  </div>
+
+			<div class="column" style="background-color:yellow;">
+
+		    <div class="twitter"></div>
+		  </div>
+
+		</div>
+
+
+</p>
+</div>
+
+<button class="collapsible">ENCRYPTED</button>
+<div class="content">
+  <p>
+
+
+<div class="row">
+  <div class="column" style="background-color:yellow;">
+    <div class="encrypted"></div>
+  </div>
+
+  <div class="column" style="background-color:yellow;">
+
+    <div class="snapchat"></div>
+  </div>
+</div>
+
+
+
+	</p>
+
+</div>
+
+<button class="collapsible">CHAT BOTS</button>
+<div class="content">
+  <p>
+
+		<div class="row">
+			<div class="column" style="background-color:yellow;">
+				<div class="service"></div>
+			</div>
+
+			<div class="column" style="background-color:yellow;">
+
+				<div class="bot"></div>
+			</div>
+
+			<div class="column" style="background-color:yellow;">
+
+				<div class="dumbbot"></div>
+			</div>
+
+	</p>
+</div>
+
+	</div>
+  </div>
+
+
+
+
+	</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
