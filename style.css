@@ -38,6 +38,8 @@ div.snapchat {
 	background-image: url("file:///Users/yeseniazamora/Documents/INTERACTIVE%201/chat/snapchat.jpg")
 }
 
+
+
 .chatbox {
 	width: 500px;
 	min-width: 390px;
@@ -76,7 +78,7 @@ div.snapchat {
 .chat .user-photo {
 	width: 60px;
 	height: 60px;
-	background: pink;
+	background: lightgrey;
 	border-radius: 50%;
 }
 
@@ -90,11 +92,11 @@ div.snapchat {
 }
 
 .friend .chat-message {
-	background: lightgrey;
+	background: lightblue;
 }
 
 .self .chat-message {
-	background: grey;
+	background: lightpink;
 	order: -1;
 }
 
