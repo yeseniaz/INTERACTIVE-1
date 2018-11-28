@@ -1,53 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>title</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <title>title</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<form class="example" action="action_page.php">
-  <input type="text" placeholder="Search.." name="search">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form>
 
-  </head>
+  <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <form class="example" action="action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
 
-  <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+</head>
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
+<script>
+
+  $(document).ready(function(){
+
+    $(".clickbutton").click(function() {
+      $(".active").removeClass("active");
+      $(this).addClass("active");
+    });
+
   });
-}
-
-$(document).ready(function(){
-  $(function() {
-      $(document).keypress(function(event) {
-          var ch = String.fromCharCode(event.keyCode || event.charCode);
-          switch (ch) {
-              case 'a': case 'A':
-                  window.location.href = 'exercise2-3.html';
-                  break;
-              case 'c': case 'C':
-                  window.location.href = 'excercise2-1.html';
-                  break;
-          }
-      });
-  });
-});
-}
 
 </script>
 
@@ -61,21 +41,20 @@ $(document).ready(function(){
       position: absolute;
       width: 100%;
       height: 200%;
-      background-color: #0F8A5F;
+      background-color: #CC231E;
   }
 
   .box1 {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    position: relative;
+    border-radius: 450px 450px 450px 450px;
+    position: absolute;
     padding: 15px;
-    top: 26%;
+    top: 6%;
     left: 36.5%;
-    margin-top: -50px;
-    margin-left: -100px;
-    box-shadow: 0px 30px 40px rgba(0,0,0,.1)
+    margin-top: 50px;
+    margin-left: -90px;
   }
 
   .boxtext {
@@ -96,9 +75,12 @@ $(document).ready(function(){
   }
 
   h1 {
+    margin-top: 48px;
+    margin-left: -50px;
+    letter-spacing: 3px;
     text-align: center;
     font-size: 50px;
-    color: red;
+    color: green;
     font-family: 'Mountains of Christmas', cursive;
 
   }
@@ -113,32 +95,17 @@ $(document).ready(function(){
     padding: 10px;
     font-size: 17px;
     border: 5px solid brown;
-    float: left;
+    float: right;
     width: 80%;
     background: #green;
     margin:auto;max-width:300px;
-    margin-top: 40px;
+    margin-top: 350px;
+
+    margin-left: 480px;
     position: absolute;
   }
 
-  form.example button {
-    float: left;
-    width: 10%;
-    padding: 10px;
-    background: #black;
-    color: black;
-    font-size: 17px;
-    border: 5px solid brown;
-    border-left: none;
-    cursor: pointer;
-    margin:auto;max-width:300px;
-    position: absolute;
 
-  }
-
-  form.example button:hover {
-    background: #green;
-  }
 
 
   form.example::after {
@@ -168,8 +135,8 @@ $(document).ready(function(){
   outline: none;
   font-size: 20px;
   font-family: 'Mountains of Christmas', cursive;
+  max-height:400px;
 }
-
 
 .active, .collapsible:hover {
   background-color: #ccc;
@@ -178,74 +145,97 @@ $(document).ready(function(){
 
 .content {
   padding: 0 18px;
-  display: none;
+  height: 0px;
   overflow: hidden;
   background-color: #f1f1f1;
+  transition:.5s;
+  font-size: 15px;
+  font-family: monospace;
+}
+
+.active .content {
+  height: 120px;
+  transition:.5s;
 }
 
   </style>
-  <body>
-    <div class="container">
-      <div class="box1">
-        <h1>
-          Not So Secret Santa
-        </h1>
 
-        <div class="boxtext">
+<body>
+  <div class="container">
+    <h1>
+      Tommy Paik
+    </h1>
 
-            <button class="collapsible">❄ weightloss tea</button>
-                <div class="content">
-                      <p>information</p>
-                    </div>
-            <button class="collapsible">❄ spanx</button>
-                <div class="content">
-                      <p>information</p>
-                    </div>
-            <button class="collapsible">❄ laxatives</button>
-                <div class="content">
-                      <p>information</p>
-                    </div>
-        </div>
 
-        <div class="snowflakes" aria-hidden="true">
-          <div class="snowflake">
-          ❄
-          </div>
-          <div class="snowflake">
-          ❅
-          </div>
-          <div class="snowflake">
-          ❆
-          </div>
-          <div class="snowflake">
-          ❄
-          </div>
-          <div class="snowflake">
-          ❅
-          </div>
-          <div class="snowflake">
-          ❆
-          </div>
-          <div class="snowflake">
-          ❄
-          </div>
-          <div class="snowflake">
-          ❅
-          </div>
-          <div class="snowflake">
-          ❆
-          </div>
-          <div class="snowflake">
-          ❄
+    <div class="box1">
+
+      <div class="boxtext">
+        <br>
+        <br>
+        <br>
+
+        <div class="clickbutton cb1">
+          <button class="collapsible">❄ xxx dvd</button>
+          <div class="content">
+            <p>On Nov 26th, 2018 at 10:57pm, Tommy visited www.****.com </p>
           </div>
         </div>
-
-
-
-
-
-
+        <div class="clickbutton cb2">
+          <button class="collapsible">❄ free movie download plugin</button>
+          <div class="content">
+            <p>On Oct 3rd, 2018 at 12:09am, Tommy visited www.freeplugin.com</p>
+          </div>
+        </div>
+        <div class="clickbutton cb3">
+          <button class="collapsible">❄ virus remover</button>
+          <div class="content">
+            <p>On July 19th, 2018 at 4:23pm, Tommy visited www.ispsystem.com</p>
+          </div>
+        </div>
       </div>
+
+      <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+          ❄
+        </div>
+        <div class="snowflake">
+          ❅
+        </div>
+        <div class="snowflake">
+          ❆
+        </div>
+        <div class="snowflake">
+          ❄
+        </div>
+        <div class="snowflake">
+          ❅
+        </div>
+        <div class="snowflake">
+          ❆
+        </div>
+        <div class="snowflake">
+          ❄
+        </div>
+        <div class="snowflake">
+          ❅
+        </div>
+        <div class="snowflake">
+          ❆
+        </div>
+        <div class="snowflake">
+          ❄
+        </div>
+      </div>
+
+      <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Search.." name="search2">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+
+
+
+
+    </div>
 
 
 
@@ -253,5 +243,6 @@ $(document).ready(function(){
 
   </div>
 
-  </body>
+</body>
+
 </html>

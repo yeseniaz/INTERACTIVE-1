@@ -15,9 +15,27 @@
 </form>
 
   </head>
-  <style>
 
   <script>
+
+  $(document).ready(function(){
+    $(function() {
+        $(document).keypress(function(event) {
+            var ch = String.fromCharCode(event.keyCode || event.charCode);
+            switch (ch) {
+                case 'a': case 'A':
+                    window.location.href = 'exercise2-2.html';
+                    break;
+                case 'c': case 'C':
+                    window.location.href = 'snowflakeload.html';
+                    break;
+            }
+        });
+    });
+  });
+}
+
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -34,6 +52,7 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
+<style>
   .background {
     width: 100%;
     height: inherit;
@@ -152,12 +171,12 @@ for (i = 0; i < coll.length; i++) {
   font-family: 'Mountains of Christmas', cursive;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active, .collapsible:hover {
   background-color: #ccc;
 }
 
-/* Style the collapsible content. Note: hidden by default */
+
 .content {
   padding: 0 18px;
   display: none;

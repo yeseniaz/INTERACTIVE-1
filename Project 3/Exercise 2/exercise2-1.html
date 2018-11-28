@@ -15,9 +15,27 @@
 </form>
 
   </head>
-  <style>
 
   <script>
+  $(document).ready(function(){
+
+    $(function() {
+        $(document).keypress(function(event) {
+            var ch = String.fromCharCode(event.keyCode || event.charCode);
+            switch (ch) {
+                case 'a': case 'A':
+                    window.location.href = 'exercise2-1.html';
+                    break;
+                case 'c': case 'C':
+                    window.location.href = 'candycaneload.html';
+                    break;
+            }
+        });
+    });
+
+  });
+
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -32,7 +50,10 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
 </script>
+
+<style>
 
   .background {
     width: 100%;
@@ -53,7 +74,7 @@ for (i = 0; i < coll.length; i++) {
     border-radius: 10px 10px 10px 10px;
     position: relative;
     padding: 15px;
-    top: 26%;
+    top: 6%;
     left: 36.5%;
     margin-top: -50px;
     margin-left: -100px;
@@ -78,6 +99,7 @@ for (i = 0; i < coll.length; i++) {
   }
 
   h1 {
+    top: 5%;
     text-align: center;
     font-size: 50px;
     color: red;
@@ -152,12 +174,12 @@ for (i = 0; i < coll.length; i++) {
   font-family: 'Mountains of Christmas', cursive;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active, .collapsible:hover {
   background-color: #ccc;
 }
 
-/* Style the collapsible content. Note: hidden by default */
+
 .content {
   padding: 0 18px;
   display: none;
@@ -168,10 +190,10 @@ for (i = 0; i < coll.length; i++) {
   </style>
   <body>
     <div class="container">
+      <h1>
+        Not So Secret Santa
+      </h1>
       <div class="box1">
-        <h1>
-          Not So Secret Santa
-        </h1>
 
         <div class="boxtext">
 

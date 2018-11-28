@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>snowflake</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script>
+  $(document).ready(function(){
+
+    $(function() {
+        $(document).keypress(function(event) {
+            var ch = String.fromCharCode(event.keyCode || event.charCode);
+            switch (ch) {
+                case 'a': case 'A':
+                    window.location.href = 'snowflakeload.html';
+                    break;
+                case 'c': case 'C':
+                    window.location.href = 'exercise3-3.html';
+                    break;
+            }
+        });
+    });
+
+  });
+  </script>
+
+</head>
+
+<style>
+
+
+body {
+  padding:0px;
+  margin:0px;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    top: px;
+    bottom: 0;
+    background: lightblue;
+}
+
+.gif1 {
+    width: 100px;
+    height: 100px;
+    background-image: url(gifs/snowflake.gif);
+    top:50vh;
+    left:50vw;
+    background-size: 100%;
+
+}
+
+</style>
+
+<body>
+
+<div class="container">
+
+
+<div class="gif1"></div>
+
+
+</div>
+
+</body>
+</html>

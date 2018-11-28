@@ -9,14 +9,33 @@
     <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<form class="example" action="action_page.php">
-  <input type="text" placeholder="Search.." name="search">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form>
+
+
 
   </head>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <script>
+  $(document).ready(function(){
+
+    $(function() {
+        $(document).keypress(function(event) {
+            var ch = String.fromCharCode(event.keyCode || event.charCode);
+            switch (ch) {
+                case 'a': case 'A':
+                    window.location.href = 'exercise3-1.html';
+                    break;
+                case 'c': case 'C':
+                    window.location.href = 'candycaneload.html';
+                    break;
+            }
+        });
+    });
+
+  });
+
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -32,50 +51,33 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-$(document).ready(function(){
-  $(function() {
-      $(document).keypress(function(event) {
-          var ch = String.fromCharCode(event.keyCode || event.charCode);
-          switch (ch) {
-              case 'a': case 'A':
-                  window.location.href = 'exercise2-3.html';
-                  break;
-              case 'c': case 'C':
-                  window.location.href = 'excercise2-1.html';
-                  break;
-          }
-      });
-  });
-});
-}
-
 </script>
 
 <style>
+
   .background {
     width: 100%;
-    height: inherit;
+    height: 100%;
   }
 
   .container {
       position: absolute;
-      width: 100%;
-      height: 200%;
-      background-color: #0F8A5F;
+      width: 100vw;
+      height: 200vh;
+      background-color: white;
   }
 
   .box1 {
     width: 500px;
     height: 500px;
     background-color: white;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 500px 500px 500px 500px;
     position: relative;
     padding: 15px;
-    top: 26%;
+    top: 6%;
     left: 36.5%;
     margin-top: -50px;
     margin-left: -100px;
-    box-shadow: 0px 30px 40px rgba(0,0,0,.1)
   }
 
   .boxtext {
@@ -96,9 +98,11 @@ $(document).ready(function(){
   }
 
   h1 {
+    margin-top: 150px;
+    margin-left: -17px;
     text-align: center;
     font-size: 50px;
-    color: red;
+    color: green;
     font-family: 'Mountains of Christmas', cursive;
 
   }
@@ -183,29 +187,24 @@ $(document).ready(function(){
   background-color: #f1f1f1;
 }
 
+.active .content {
+  height: 120px;
+  transition:.5s;
+}
+
   </style>
   <body>
     <div class="container">
-      <div class="box1">
-        <h1>
-          Not So Secret Santa
-        </h1>
+      <h1>
+        Not So Secret Santa
+      </h1>
 
-        <div class="boxtext">
+      <form class="example" action="/candycaneload.html" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="type in a name to begin your hacking experience" name="search2">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
 
-            <button class="collapsible">❄ weightloss tea</button>
-                <div class="content">
-                      <p>information</p>
-                    </div>
-            <button class="collapsible">❄ spanx</button>
-                <div class="content">
-                      <p>information</p>
-                    </div>
-            <button class="collapsible">❄ laxatives</button>
-                <div class="content">
-                      <p>information</p>
-                    </div>
-        </div>
+
 
         <div class="snowflakes" aria-hidden="true">
           <div class="snowflake">
