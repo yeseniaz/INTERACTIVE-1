@@ -94,37 +94,21 @@ h1 {
   * {
     box-sizing: border-box;
   }
-
   form.example input[type=text] {
     padding: 10px;
     font-size: 17px;
     border: 5px solid brown;
-    float: left;
+    float: right;
     width: 80%;
     background: #green;
     margin:auto;max-width:300px;
-    margin-top: 40px;
+    margin-top: 350px;
+
+    margin-left: 480px;
     position: absolute;
   }
 
-  form.example button {
-    float: left;
-    width: 10%;
-    padding: 10px;
-    background: #black;
-    color: black;
-    font-size: 17px;
-    border: 5px solid brown;
-    border-left: none;
-    cursor: pointer;
-    margin:auto;max-width:300px;
-    position: absolute;
 
-  }
-
-  form.example button:hover {
-    background: #green;
-  }
 
 
   form.example::after {
@@ -133,6 +117,7 @@ h1 {
     display: table;
     align-content: center;
   }
+
 
   .snowflake {
   color: #fff;
@@ -177,6 +162,7 @@ h1 {
   transition:.5s;
 }
 
+
   </style>
   <body>
     <div class="container">
@@ -192,20 +178,25 @@ h1 {
           <br>
           <br>
 
-
-            <button class="collapsible">❄ weightloss tea</button>
-                <div class="content">
-                      <p>information</p>
-                    </div>
-            <button class="collapsible">❄ spanx</button>
-                <div class="content">
-                      <p>information</p>
-                    </div>
-            <button class="collapsible">❄ laxatives</button>
-                <div class="content">
-                      <p>information</p>
-                    </div>
+        <div class="clickbutton cb1">
+          <button class="collapsible">❄ weightloss tea</button>
+          <div class="content">
+            <p>On Nov 26th, 2018 at 10:57pm, Rebecca sent "Lisa" a referral link for FitTea</p>
+          </div>
         </div>
+        <div class="clickbutton cb2">
+          <button class="collapsible">❄ spanx</button>
+          <div class="content">
+            <p>On Oct 3rd, 2018 at 12:09am, Rebecca sent a message regarding her love handles to her groupchat</p>
+          </div>
+        </div>
+        <div class="clickbutton cb3">
+          <button class="collapsible">❄ laxatives</button>
+          <div class="content">
+            <p>On July 19th, 2018 at 4:23pm, Rebecca messaged her doctor about her bowel movements</p>
+          </div>
+        </div>
+      </div>
 
         <div class="snowflakes" aria-hidden="true">
           <div class="snowflake">
@@ -243,8 +234,8 @@ h1 {
 
 
         <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
-      <input type="text" placeholder="Search.." name="search2">
-      <button type="submit"><i class="fa fa-search"></i></button>
+      <input type="text" placeholder="who's next?" name="search2">
+
       </form>
 
 
