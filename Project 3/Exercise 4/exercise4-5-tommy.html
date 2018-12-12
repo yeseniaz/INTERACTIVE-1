@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>tommy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/omv0frn.css">
+
+</head>
+
+<script>
+
+$(document).ready(function(){
+
+  $(".clickbutton").click(function() {
+    $(".active").not(this).removeClass("active");
+    $(this).toggleClass("active");
+  });
+
+});
+
+</script>
+
+<style>
+
+body {
+  padding:0px;
+  margin:0px;
+  width: 100%;
+  height: 100%;
+}
+
+  .background {
+    width: 100vw;
+    height: 100vh;
+    background-image: red;
+    background-color: #CC231E;
+    overflow: auto;
+  }
+
+  .container {
+      position: absolute;
+      width: 100%;
+      height: 200%;
+
+  }
+
+  .box1 {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 450px 450px 450px 450px;
+    position: absolute;
+    padding: 15px;
+    top: 6%;
+    left: 36.5%;
+    margin-top: 0px;
+    margin-left: -90px;
+  }
+
+
+  .boxtext {
+    width: 400px;
+    height: 200px;
+    border-radius: 100%;
+    padding: 15px;
+    position: inherit;
+    top: 1%;
+    left: 30%;
+    margin-left: -100px;
+    font-family: 'Mountains of Christmas', bold, cursive;
+    font-weight: 400;
+    font-size: 20pt;
+    font-style: normal;
+    text-align: left;
+    color: black;
+  }
+
+  h1 {
+    margin-top: 280px;
+    margin-left: 920px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 50px;
+    color: darkgreen;
+    font-family: 'Mountains of Christmas', cursive;
+
+  }
+
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 5px solid brown;
+    float: right;
+    width: 80%;
+    background: #green;
+    margin:auto;max-width:300px;
+    margin-top: 300px;
+
+    margin-left: 480px;
+    position: absolute;
+  }
+
+
+
+
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+    align-content: center;
+  }
+
+  .snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+
+.collapsible {
+  background-color: #ffff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 30px;
+  font-family: 'Mountains of Christmas', cursive;
+  max-height:400px;
+}
+
+.active, .collapsible:hover {
+  background-color: darkgreen;
+}
+
+
+.content {
+  padding: 0 18px;
+  height: 0px;
+  overflow: hidden;
+  background-color: lightgrey;
+  transition:.5s;
+  font-size: 15px;
+  font-family: monospace;
+}
+
+.active .content {
+  height: 50px;
+  transition:.5s;
+}
+
+  </style>
+
+<body>
+  <div class="background">
+  <div class="container">
+    <h1>
+      Tommy Peck
+    </h1>
+
+
+    <div class="box1">
+
+      <div class="boxtext">
+        <br>
+        <br>
+        <br>
+
+        <div class="clickbutton cb1">
+          <button class="collapsible">xxx dvd</button>
+          <div class="content">
+            <p>On Nov 26th, 2018 at 10:57pm, Tommy visited www.p******.com </p>
+          </div>
+        </div>
+        <div class="clickbutton cb2">
+          <button class="collapsible">free movie download plugin</button>
+          <div class="content">
+            <p>On Oct 3rd, 2018 at 12:09am, Tommy visited www.freeplugin.com</p>
+          </div>
+        </div>
+        <div class="clickbutton cb3">
+          <button class="collapsible">virus remover</button>
+          <div class="content">
+            <p>On July 19th, 2018 at 4:23pm, Tommy visited www.ispsystem.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+          ❄
+        </div>
+        <div class="snowflake">
+          ❅
+        </div>
+        <div class="snowflake">
+          ❆
+        </div>
+        <div class="snowflake">
+          ❄
+        </div>
+        <div class="snowflake">
+          ❅
+        </div>
+        <div class="snowflake">
+          ❆
+        </div>
+        <div class="snowflake">
+          ❄
+        </div>
+        <div class="snowflake">
+          ❅
+        </div>
+        <div class="snowflake">
+          ❆
+        </div>
+        <div class="snowflake">
+          ❄
+        </div>
+      </div>
+
+
+
+      <form class="example" action="file:///Users/yeseniazamora/Documents/INTERACTIVE%201/Project%203/Exercise%204/exercise4-6-mistletoe.html" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="who's next?" name="search2">
+
+      </form>
+
+
+
+
+    </div>
+
+
+
+
+
+  </div>
+</div>
+
+</body>
+
+</html>

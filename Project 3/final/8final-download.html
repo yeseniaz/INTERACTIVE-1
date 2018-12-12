@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<script>
+$(document).ready(function(){
+
+  $(function() {
+      $(document).keypress(function(event) {
+          var ch = String.fromCharCode(event.keyCode || event.charCode);
+          switch (ch) {
+              case 'a': case 'A':
+                  window.location.href = '8final-download.html';
+                  break;
+              case 'c': case 'C':
+                  window.location.href = '1final-home.html';
+                  break;
+          }
+      });
+  });
+
+});
+
+  $(document).ready(function(){
+
+    $(".clickbutton").click(function() {
+      $(".active").removeClass("active");
+      $(this).addClass("active");
+    });
+
+  });
+
+</script>
+
+<style>
+  .background {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container {
+      position: absolute;
+      width: 102vw;
+      height: 102vh;
+      margin-top: -2vh;
+      margin-left: -2vh;
+      background-color: black;
+  }
+
+  .box1 {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 500px 500px 500px 500px;
+    position: relative;
+    padding: 15px;
+    top: 6%;
+    left: 36.5%;
+    margin-top: -50px;
+    margin-left: -100px;
+  }
+
+  .box2 {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 500px 500px 500px 500px;
+    position: relative;
+    padding: 15px;
+    top: 15%;
+    left: 36.5%;
+    margin-top: -50px;
+    margin-left: -100px;
+  }
+
+  .boxtext {
+    width: 400px;
+    height: 200px;
+    border-radius: 100%;
+    padding: 15px;
+    position: inherit;
+    top: 1%;
+    left: 30%;
+    margin-left: -100px;
+    font-family: 'Mountains of Christmas', bold, cursive;
+    font-weight: 400;
+    font-size: 20pt;
+    font-style: normal;
+    text-align: left;
+    color: white;
+  }
+
+  h1 {
+    margin-top: 150px;
+    margin-left: -17px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: 'Mountains of Christmas', cursive;
+
+  }
+
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  form.example input[type=text] {
+    padding: 8px;
+    font-size: 12px;
+    border: 5px solid brown;
+    float: right;
+    width: 80%;
+    background: #green;
+    margin:auto;max-width:300px;
+    margin-top: 5px;
+    margin-left: -10px;
+    position: absolute;
+  }
+
+
+
+
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+    align-content: center;
+  }
+
+  .snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+
+.collapsible {
+  background-color: #ffff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-family: 'Mountains of Christmas', cursive;
+  max-height:400px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+
+.content {
+  padding: 0 18px;
+  height: 0px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  transition:.5s;
+  font-size: 15px;
+  font-family: monospace;
+}
+
+.active .content {
+  height: 120px;
+  transition:.5s;
+}
+
+.btn {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 42vw;
+}
+
+.btn:hover {
+  background-color: red;
+}
+
+
+  </style>
+  <body>
+    <div class="container">
+      <h1>
+        <br>
+        Click below to download your hack-mas lists!
+      </h1>
+
+<button class="btn"><i class="fa fa-download"></i> Download</button>
+
+
+
+
+
+      </div>
+
+
+
+
+
+  </div>
+
+  </body>
+</html>
